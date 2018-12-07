@@ -178,7 +178,7 @@ h3 {
 	width: 500px;
 }
 #imgL {
-	clear:left;
+	clear:right;
 	float: left;
 }
 #imgR {
@@ -210,8 +210,8 @@ h3 {
 }
 
 .button {
-	padding:7px 20px;
-	margin-left: 20px;
+	padding:7px 40px;
+	margin-left: 43%;
 	text-align: center;
 	background-color:rgb(235, 235, 235);
 	color:black;
@@ -224,3 +224,28 @@ h3 {
 .contact {
 	font-size: 16px;
 }
+
+.checkbox {
+	font-size: 16px;
+	margin-left: 50px;
+	margin-bottom: 10px;
+
+}
+
+.form-group {
+	font-size: 16px;
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+
+.column {
+	float: left;
+	width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
