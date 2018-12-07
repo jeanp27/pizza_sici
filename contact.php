@@ -15,8 +15,8 @@
     <div id="templatemo_title">PIZZERIA <span>SICI</span></div>
       <div class="templatemo_menu">
     <ul>
-      <li><a href="index.html">INICIO</a></li>
-      <li><a href="menu.html">MENU</a></li>
+      <li><a href="index.php">INICIO</a></li>
+      <li><a href="menu.php">MENU</a></li>
       <li><a href="#" style="color:#9c9c9c">CONTACTANOS</a></li>
     </ul>
   </div>
