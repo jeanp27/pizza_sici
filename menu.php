@@ -14,11 +14,9 @@
   <div id="templatemo_top">
     <div id="templatemo_title">PIZZERIA <span>SICI</span></div>
       <div class="templatemo_menu">
-        <ul>
-          <li><a href="index.php">INICIO</a></li>
-          <li><a href="#" style="color:#9c9c9c">MENU</a></li>
-          <li><a href="contact.php">CONTACTANOS</a></li>
-        </ul>
+        <?php
+          include 'nav-bar.php';
+        ?>
       </div>
     </div>
     <div id="templatemo_header">
