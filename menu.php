@@ -32,103 +32,39 @@
         <div class="checkbox">
           <label>Queso &nbsp;&nbsp; <input type="checkbox" value=""></label>
         </div>
-        <div class="form-group">
-          <label for="sel1">Salsa:</label>
-          <select class="form-control" id="sel1">
-            <option> Nada </option>
-            <option> Tomate </option>
-            <option> Marinara </option>
-            <option> Alfredo </option>
-            <option> Guayaba </option>
-          </select>
-        </div>
-        <br>
+
+        <?php
+          $sauce = array('Nada', 'Tomate', 'Marinara', 'Alfredo', 'Guayaba');
+          function showSelect($array, $arType) {
+
+            echo '<div class = form-group>
+                  <label for="sel1">'.$arType.'</label>
+                  <select class="form-control" id="sel1">';
+            foreach($array as $item) {
+              echo '<option>'.$item.'</option>';
+            }
+            echo '</select></div><br>';
+          }
+
+          showSelect($sauce, 'Salsa')
+        ?>
         <h3> Toppings </h3>
         <div class="row">
           <div class="column">
-            <div class="form-group">
-              <label for="sel1">Carne 1:</label>
-              <select class="form-control" id="sel1">
-                <option> Nada </option>
-                <option> Pepperoni </option>
-                <option> Pollo </option>
-                <option> Bacon </option>
-                <option> Anchoas </option>
-                <option> Chorizo </option>
-                <option> Salami </option>
-              </select>
-            </div> 
-
-            <div class="form-group">
-              <label for="sel1">Carne 2:</label>
-              <select class="form-control" id="sel1">
-                <option> Nada </option>
-                <option> Pepperoni </option>
-                <option> Pollo </option>
-                <option> Bacon </option>
-                <option> Anchoas </option>
-                <option> Chorizo </option>
-                <option> Salami </option>
-              </select>
-            </div> 
-
-            <div class="form-group">
-              <label for="sel1">Carne 3:</label>
-              <select class="form-control" id="sel1">
-                <option> Nada </option>
-                <option> Pepperoni </option>
-                <option> Pollo </option>
-                <option> Bacon </option>
-                <option> Anchoas </option>
-                <option> Chorizo </option>
-                <option> Salami </option>
-              </select>
-            </div>
+            <?php
+              for ($i = 1; $i <= 3; $i++) {
+                $carne = array('Nada', 'Pepperoni', 'Pollo', 'Bacon', 'Anchoas', 'Chorizo', 'Salami');
+                showSelect($carne, 'Carne ' . $i);
+              }
+            ?>
           </div>
-
           <div class="column">
-            <div class="form-group">
-              <label for="sel1">Otros 1:</label>
-              <select class="form-control" id="sel1">
-                <option> Nada </option>
-                <option> Cebolla </option>
-                <option> Setas </option>
-                <option> Pimiento Verde </option>
-                <option> Aceitunas Negras </option>
-                <option> Aceitunas Verdes </option>
-                <option> Orégano </option>
-                <option> Ajo </option>
-                <option> Piña </option>
-              </select>
-            </div> 
-
-            <div class="form-group">
-            <label for="sel1">Otros 1:</label>
-              <select class="form-control" id="sel1">
-                <option> Nada </option>
-                <option> Cebolla </option>
-                <option> Setas </option>
-                <option> Pimiento Verde </option>
-                <option> Aceitunas Negras </option>
-                <option> Aceitunas Verdes </option>
-                <option> Orégano </option>
-                <option> Piña </option>
-              </select>
-            </div> 
-
-            <div class="form-group">
-            <label for="sel1">Otros 1:</label>
-              <select class="form-control" id="sel1">
-                <option> Nada </option>
-                <option> Cebolla </option>
-                <option> Setas </option>
-                <option> Pimiento Verde </option>
-                <option> Aceitunas Negras </option>
-                <option> Aceitunas Verdes </option>
-                <option> Orégano </option>
-                <option> Piña </option>
-              </select>
-            </div>
+            <?php
+              for ($i = 1; $i <= 3; $i++) {
+                $otros = array('Nada', 'Cebolla', 'Setas', 'Pimiento Verde', 'Aceitunas Negras', 'Aceitunas Verdes', 'Orégano', 'Ajo', 'Piña');
+                showSelect($carne, 'Otros ' . $i);
+              }
+            ?>
           </div>
         </div>
         
